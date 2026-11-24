@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Crypto Messenger</title>
+  <link rel="stylesheet" href="/web/style.css">
+  <script defer src="/web/app.js"></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">◆</span><div><h1>Crypto Messenger</h1><p data-i18n="subtitle">Private message toolkit</p></div></div>
+      <label class="language"><span data-i18n="language">Language</span>
+        <select id="language"><option value="en">English</option><option value="fa">فارسی</option></select>
+      </label>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow" data-i18n="local_prototype">LOCAL PROTOTYPE · VERSION 0.1.0</p>
+      <h2 data-i18n="welcome">Encrypt a message. Share it anywhere.</h2>
+      <p data-i18n="intro">Create an encrypted text payload, send it through any messenger, and decrypt it on a compatible installation.</p>
+    </section>
+
+    <section class="panel">
+      <div class="tabs">
+        <button class="tab active" data-tab="encrypt" data-i18n="encrypt_tab">Encrypt</button>
+        <button class="tab" data-tab="decrypt" data-i18n="decrypt_tab">Decrypt</button>
+      </div>
+
+      <div id="encrypt-panel" class="tab-panel">
+        <label for="plain" data-i18n="message_label">Message</label>
+        <textarea id="plain" rows="5" data-i18n-placeholder="message_placeholder" placeholder="Write your message..."></textarea>
+        <label for="password" data-i18n="passphrase">Passphrase</label>
+        <input id="password" type="password" autocomplete="new-password" data-i18n-placeholder="passphrase_hint" placeholder="At least 8 characters">
+        <label for="confirm" data-i18n="confirm_passphrase">Confirm passphrase</label>
+        <input id="confirm" type="password" autocomplete="new-password">
+        <button id="encrypt-btn" class="primary" data-i18n="encrypt_button">Encrypt message</button>
+        <label for="encrypted-output" data-i18n="encrypted_output">Encrypted output</label>
+        <textarea id="encrypted-output" rows="5" readonly></textarea>
+        <div class="actions">
+          <button id="copy-btn" data-i18n="copy">Copy</button>
+          <button id="download-btn" data-i18n="download_file">Download .cmsg file</button>
+          <button id="save-btn" data-i18n="save_database">Save to database</button>
+        </div>
+      </div>
+
+      <div id="decrypt-panel" class="tab-panel hidden">
+        <label for="payload-input" data-i18n="payload_label">Encrypted text or CMSG payload</label>
+        <textarea id="payload-input" rows="5" data-i18n-placeholder="payload_placeholder" placeholder="Paste CMSG1:... here"></textarea>
+        <div class="actions">
+          <label class="file-button"><span data-i18n="load_file">Load .cmsg file</span><input id="file-input" type="file" accept=".cmsg,.txt"></label>
+        </div>
+        <label for="decrypt-password" data-i18n="passphrase">Passphrase</label>
+        <input id="decrypt-password" type="password" autocomplete="current-password">
+        <button id="decrypt-btn" class="primary" data-i18n="decrypt_button">Decrypt message</button>
+        <label for="plain-output" data-i18n="decrypted_output">Decrypted message</label>
+        <textarea id="plain-output" rows="5" readonly></textarea>
+      </div>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="notice">
+      <strong data-i18n="prototype_notice_title">Prototype notice</strong>
+      <p data-i18n="prototype_notice">Version 0.1.0 currently implements password-based encryption. Public-key encryption and encrypted attachments are planned for later versions.</p>
+    </section>
+
+    <footer><span>Crypto Messenger 0.1.0</span><span data-i18n="local_only">Local-only development server</span></footer>
+  </main>
+</body>
+</html>
