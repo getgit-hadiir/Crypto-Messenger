@@ -1,0 +1,26 @@
+# Persian language resource file
+subtitle=ابزار پیام‌نگاری خصوصی
+language=زبان
+local_prototype=نمونه محلی · نسخه ۰.۱.۰
+welcome=پیام را رمزنگاری کنید و همه‌جا بفرستید.
+intro=یک پیام رمزنگاری‌شده بسازید، آن را با هر پیام‌رسانی ارسال کنید و در یک نصب سازگار باز کنید.
+encrypt_tab=رمزنگاری
+decrypt_tab=رمزگشایی
+message_label=متن پیام
+message_placeholder=متن پیام را وارد کنید...
+passphrase=عبارت عبور
+passphrase_hint=حداقل ۸ نویسه
+confirm_passphrase=تکرار عبارت عبور
+encrypt_button=رمزنگاری پیام
+encrypted_output=خروجی رمزنگاری‌شده
+copy=کپی
+download_file=دریافت فایل ‎.cmsg
+save_database=ذخیره در بانک اطلاعاتی
+payload_label=متن رمزنگاری‌شده یا محتوای CMSG
+payload_placeholder=متن CMSG1:... را وارد کنید
+load_file=بارگذاری فایل ‎.cmsg
+decrypt_button=رمزگشایی پیام
+decrypted_output=پیام رمزگشایی‌شده
+prototype_notice_title=توضیح نسخه آزمایشی
+prototype_notice=نسخه ۰.۱.۰ در حال حاضر رمزنگاری با عبارت عبور را پیاده‌سازی می‌کند. رمزنگاری کلید عمومی و پیوست‌های رمزنگاری‌شده برای نسخه‌های بعدی برنامه‌ریزی شده‌اند.
+local_only=سرور آزمایشی فقط روی همین دستگاه

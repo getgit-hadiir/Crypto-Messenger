@@ -1,0 +1,26 @@
+# English language resource file
+subtitle=Private message toolkit
+language=Language
+local_prototype=LOCAL PROTOTYPE · VERSION 0.1.0
+welcome=Encrypt a message. Share it anywhere.
+intro=Create an encrypted text payload, send it through any messenger, and decrypt it on a compatible installation.
+encrypt_tab=Encrypt
+decrypt_tab=Decrypt
+message_label=Message
+message_placeholder=Write your message...
+passphrase=Passphrase
+passphrase_hint=At least 8 characters
+confirm_passphrase=Confirm passphrase
+encrypt_button=Encrypt message
+encrypted_output=Encrypted output
+copy=Copy
+download_file=Download .cmsg file
+save_database=Save to database
+payload_label=Encrypted text or CMSG payload
+payload_placeholder=Paste CMSG1:... here
+load_file=Load .cmsg file
+decrypt_button=Decrypt message
+decrypted_output=Decrypted message
+prototype_notice_title=Prototype notice
+prototype_notice=Version 0.1.0 currently implements password-based encryption. Public-key encryption and encrypted attachments are planned for later versions.
+local_only=Local-only development server
